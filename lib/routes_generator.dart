@@ -14,16 +14,28 @@ class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case routeHome:
-        return MaterialPageRoute(builder: (_) => const Jumbotron());
+        return MaterialPageRoute(
+          builder: (_) => const Jumbotron(),
+          settings: settings,
+        );
         break;
       case routeMyProjects:
-        return MaterialPageRoute(builder: (_) => const Projects());
+        return MaterialPageRoute(
+          builder: (_) => const Projects(),
+          settings: settings,
+        );
         break;
       case routeContactMe:
-        return MaterialPageRoute(builder: (_) => const ContactMe());
+        return MaterialPageRoute(
+          builder: (_) => const ContactMe(),
+          settings: settings,
+        );
         break;
       default:
-        return MaterialPageRoute(builder: (_) => const Jumbotron());
+        return MaterialPageRoute(
+          builder: (_) => const Jumbotron(),
+          settings: settings,
+        );
     }
   }
 }

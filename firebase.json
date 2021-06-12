@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "my-flutter-portfolio-ec160",
     "public": "build/web",
     "ignore": [
       "firebase.json",
